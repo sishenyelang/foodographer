@@ -8,71 +8,99 @@
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/Expertise "
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Expertise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/create_password"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Username"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <EditText
         android:id="@+id/EmailAdress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="9dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/enter_your_email_address"
         android:inputType="text|textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/FlavorPerfer"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.093" />
 
     <EditText
-        android:id="@+id/FlavorPerfer"
+        android:id="@+id/create_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="@string/flavor_perfer"
+        android:hint="Enter password"
         android:inputType="textShortMessage"
-        app:layout_constraintBottom_toTopOf="@+id/Experties"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EmailAdress"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.053" />
 
     <EditText
-        android:id="@+id/Experties"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="98dp"
-        android:ems="10"
-        android:hint="@string/Enter_experties"
-        android:inputType="text|textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FlavorPerfer"
-        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/EmailAddress"
+        android:id="@+id/Username"
         android:layout_width="87dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="5dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+        android:inputType="none"
+        android:text="Username"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/EmailAdress"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.406"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintVertical_bias="0.109" />
+
+    <ScrollView
+        android:layout_width="273dp"
+        android:layout_height="325dp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="197dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
